@@ -4,22 +4,29 @@ export default function Home() {
       <section className="section hero fade-in">
         <div className="container">
           <p className="eyebrow">Frontend Developer</p>
-          <h2 className="heroTitle">Amna Hodžić</h2>
+          <h2 className="heroTitle">I build clean, modern React interfaces.</h2>
           <p className="heroText">
-            I build clean, responsive interfaces in React and I enjoy turning
-            designs into reusable components.
+            Welcome to my portfolio. Explore my work, experiments, and ways to
+            contact me.
           </p>
+        </div>
+      </section>
 
-          <div className="card twoCol" style={{ marginTop: 18 }}>
-            <div className="photoCard">
-              <img className="photo" src="/me.jpg" alt="Portrait of Amna" />
-            </div>
-            <div>
-              <h3 className="sectionTitle">Basic info</h3>
-              <p className="text">📍 Vienna</p>
-              <p className="text">⚡ React • JS • HTML/CSS • Git</p>
-              <p className="text">🎯 Looking for frontend opportunities</p>
-            </div>
+      <section className="section">
+        <div className="container twoCol">
+          <div className="card photoCard">
+            <img className="photo" src="/me.jpg" alt="Portrait of Amna" />
+          </div>
+
+          <div className="card">
+            <h2 className="sectionTitle">A bit about me</h2>
+            <p className="text">
+              I’m Amna, a frontend developer focused on building responsive and
+              user-friendly web experiences.
+            </p>
+            <p className="text">
+              Tools I use: React, JavaScript, HTML/CSS, Git/GitHub, REST APIs.
+            </p>
           </div>
         </div>
       </section>

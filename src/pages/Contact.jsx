@@ -1,11 +1,9 @@
 export default function Contact() {
   return (
-    <section className="section">
+    <section className="section fade-in">
       <div className="container">
         <h2 className="sectionTitle">Contact</h2>
-        <p className="text">
-          We’ll place your modal + form here (or inline form).
-        </p>
+        <p className="text">Contact form / modal will live here.</p>
       </div>
     </section>
   );
