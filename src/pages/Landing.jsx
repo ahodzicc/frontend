@@ -4,6 +4,7 @@ import Header from "../components/layout/Header";
 import Nav from "../components/layout/Nav";
 import Footer from "../components/layout/Footer";
 import Modal from "../components/ui/Modal";
+import ProjectCard from "../components/ui/ProjectCard";
 
 export default function Landing() {
   const [open, setOpen] = useState(false);
@@ -56,13 +57,27 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* WORK */}
         <section id="work" className="section">
           <div className="container">
             <h2 className="sectionTitle">Work</h2>
-            <p className="text">
-              Project cards will go here (Live link + GitHub link).
-            </p>
+
+            <div className="projectsGrid">
+              <ProjectCard
+                title="Portfolio Website"
+                description="Personal portfolio built with React + Vite, featuring a modal contact form and responsive layout."
+                tags={["React", "Vite", "CSS", "UI"]}
+                liveUrl=""
+                codeUrl="https://github.com/ahodzicc/frontend"
+              />
+
+              <ProjectCard
+                title="Project Two"
+                description="Add your next project here (API, dashboard, e-commerce, etc.)."
+                tags={["React", "API", "Responsive"]}
+                liveUrl=""
+                codeUrl=""
+              />
+            </div>
           </div>
         </section>
 
