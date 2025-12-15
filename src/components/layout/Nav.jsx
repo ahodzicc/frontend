@@ -1,9 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "Work", href: "#work" },
-  { label: "Exploration", href: "#exploration" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", to: "/" },
+  { label: "Work", to: "/work" },
+  { label: "Exploration", to: "/exploration" },
+  { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export default function Nav() {
@@ -12,10 +14,16 @@ export default function Nav() {
       <div className="container">
         <ul className="nav-list">
           {links.map((l) => (
-            <li key={l.href}>
-              <a className="nav-link" href={l.href}>
+            <li key={l.to}>
+              <NavLink
+                to={l.to}
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""}`
+                }
+                end={l.to === "/"}
+              >
                 {l.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
